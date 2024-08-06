@@ -17,8 +17,8 @@ jobs:
       matrix:
         base_image:
         # https://mcr.microsoft.com/product/dotnet/aspnet/tags
-          - mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
-          - mcr.microsoft.com/dotnet/aspnet:8.0-jammy
+#          - mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+#          - mcr.microsoft.com/dotnet/aspnet:8.0-jammy
           - mcr.microsoft.com/dotnet/aspnet:8.0
         arch:
           - linux/amd64
@@ -63,5 +63,5 @@ jobs:
         curl -X PATCH \
           -u "${{ secrets.DOCKER_USERNAME }}:${{ secrets.DOCKER_PASSWORD }}" \
           -H "Content-Type: application/json" \
-          -d '{"description": "'"${DESCRIPTION}"'"}' \
+          -d "{\"full_description\": \"${DESCRIPTION//\"/\\\"}\"}" \
           https://hub.docker.com/v2/repositories/nrivett/temp-aspnet-playwright/
