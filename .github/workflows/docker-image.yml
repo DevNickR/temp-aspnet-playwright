@@ -18,6 +18,7 @@ jobs:
         base_image:
         # https://mcr.microsoft.com/product/dotnet/aspnet/tags
           - mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+          - mcr.microsoft.com/dotnet/aspnet:8.0-jammy
           - mcr.microsoft.com/dotnet/aspnet:8.0
         arch:
           - linux/amd64
