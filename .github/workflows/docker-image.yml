@@ -16,11 +16,13 @@ jobs:
     strategy:
       matrix:
         base_image:
-          - mcr.microsoft.com/dotnet/aspnet:6.0
+          - mcr.microsoft.com/dotnet/aspnet:8.0-bullseye-slim
           - mcr.microsoft.com/dotnet/aspnet:8.0
+          - mcr.microsoft.com/dotnet/aspnet:8.0-focal-slim
+          - mcr.microsoft.com/dotnet/aspnet:8.0-distroless
         arch:
           - linux/amd64
-          - linux/arm64
+#          - linux/arm64
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
