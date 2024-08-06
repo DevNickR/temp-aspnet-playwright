@@ -16,10 +16,9 @@ jobs:
     strategy:
       matrix:
         base_image:
+        # https://mcr.microsoft.com/product/dotnet/aspnet/tags
           - mcr.microsoft.com/dotnet/aspnet:8.0-bullseye-slim
           - mcr.microsoft.com/dotnet/aspnet:8.0
-          - mcr.microsoft.com/dotnet/aspnet:8.0-focal-slim
-          - mcr.microsoft.com/dotnet/aspnet:8.0-distroless
         arch:
           - linux/amd64
 #          - linux/arm64
