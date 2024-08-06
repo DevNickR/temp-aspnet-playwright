@@ -18,7 +18,8 @@ jobs:
         base_image:
           - mcr.microsoft.com/dotnet/aspnet:6.0
           - mcr.microsoft.com/dotnet/aspnet:8.0
-
+        arch:
+          - linux/amd64
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -43,12 +44,14 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
+        context: .
+        platforms: ${{ matrix.arch }}
         push: true
         tags: |
           nrivett/temp-aspnet-playwright:${{ env.VERSION }}
           nrivett/temp-aspnet-playwright:${{ env.VERSION }}-${{ env.DATE }}
-      build-args: |
-        BASE_IMAGE=${{ matrix.base_image }}
+        build-args: |
+          BASE_IMAGE=${{ matrix.base_image }}
 
     - name: Update Docker Hub README
       if: github.ref == 'refs/heads/main'
