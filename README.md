@@ -1,6 +1,6 @@
 # ASP.NET with Playwright Docker Image
 
-[![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)
+[![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml)
 
 This project provides a custom Docker image based on the official Microsoft ASP.NET image, with Playwright installed for web automation and testing. This image is ideal for developers who need to integrate Playwright tests into their ASP.NET applications.
 
@@ -16,7 +16,7 @@ You can find the Docker images for this project on Docker Hub: [nrivett/temp-asp
 
 ## GitHub Repository
 
-The source code for this project is available on GitHub: [yourusername/yourrepository](https://github.com/yourusername/yourrepository).
+The source code for this project is available on GitHub: [DevNickR/temp-aspnet-playwright](https://github.com/DevNickR/temp-aspnet-playwright).
 
 ## Tags
 
