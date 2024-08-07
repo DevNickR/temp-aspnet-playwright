@@ -44,17 +44,17 @@ jobs:
       id: get_date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
-    - name: Build and push
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        platforms: ${{ matrix.arch }}
-        push: true
-        tags: |
-          nrivett/temp-aspnet-playwright:${{ env.VERSION }}
-          nrivett/temp-aspnet-playwright:${{ env.VERSION }}-${{ env.DATE }}
-        build-args: |
-          BASE_IMAGE=${{ matrix.base_image }}
+    # - name: Build and push
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     context: .
+    #     platforms: ${{ matrix.arch }}
+    #     push: true
+    #     tags: |
+    #       nrivett/temp-aspnet-playwright:${{ env.VERSION }}
+    #       nrivett/temp-aspnet-playwright:${{ env.VERSION }}-${{ env.DATE }}
+    #     build-args: |
+    #       BASE_IMAGE=${{ matrix.base_image }}
 
     - name: Obtain Bearer Token
       id: get_token
