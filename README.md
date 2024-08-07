@@ -30,12 +30,18 @@ The source code for this project is available on GitHub: [DevNickR/temp-aspnet-p
 
 ## Tags
 
-The Docker images are tagged based on the base ASP.NET version and the build date to allow for easy versioning and rolling updates.
+The Docker images are tagged based on the base ASP.NET version, specific variant, and the build date to allow for easy versioning and rolling updates.
 
-- `nrivett/temp-aspnet-playwright:6.0` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`.
+- `nrivett/temp-aspnet-playwright:8.0-bookworm-slim` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim`.
+- `nrivett/temp-aspnet-playwright:8.0-jammy` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-jammy`.
+- `nrivett/temp-aspnet-playwright:8.0-alpine` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-alpine`.
 - `nrivett/temp-aspnet-playwright:8.0` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`.
-- `nrivett/temp-aspnet-playwright:6.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`, with the build date appended.
-- `nrivett/temp-aspnet-playwright:8.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`, with the build date appended.
+
+Each tag also includes a date-based variant for rolling updates:
+- `nrivett/temp-aspnet-playwright:8.0-bookworm-slim-YYYYMMDD`
+- `nrivett/temp-aspnet-playwright:8.0-jammy-YYYYMMDD`
+- `nrivett/temp-aspnet-playwright:8.0-alpine-YYYYMMDD`
+- `nrivett/temp-aspnet-playwright:8.0-YYYYMMDD`
 
 ## Usage
 
