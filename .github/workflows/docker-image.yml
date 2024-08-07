@@ -56,12 +56,22 @@ jobs:
         build-args: |
           BASE_IMAGE=${{ matrix.base_image }}
 
+    - name: Obtain Bearer Token
+      id: get_token
+      run: |
+        TOKEN=$(curl -s -X POST https://hub.docker.com/v2/users/login \
+          -H "Content-Type: application/json" \
+          -d '{"username": "${{ secrets.DOCKER_USERNAME }}", "password": "${{ secrets.DOCKER_PASSWORD }}"}' | jq -r .token)
+        echo "TOKEN=$TOKEN" >> $GITHUB_ENV
+
     - name: Update Docker Hub README
       if: github.ref == 'refs/heads/main'
+      env:
+        TOKEN: ${{ env.TOKEN }}
       run: |
         DESCRIPTION=$(cat README.md)
-        curl -X PATCH \
-          -u "${{ secrets.DOCKER_USERNAME }}:${{ secrets.DOCKER_PASSWORD }}" \
+        curl -v -X PATCH \
+          -H "Authorization: Bearer $TOKEN" \
           -H "Content-Type: application/json" \
           -d "{\"full_description\": \"${DESCRIPTION//\"/\\\"}\"}" \
           https://hub.docker.com/v2/repositories/nrivett/temp-aspnet-playwright/
