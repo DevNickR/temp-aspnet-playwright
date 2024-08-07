@@ -1,6 +1,6 @@
 # ASP.NET with Playwright Docker Image
 
-[![Build and Push Docker Image](https://github.com/yourusername/yourrepository/actions/workflows/docker-image.yml/badge.svg)](https://github.com/yourusername/yourrepository/actions/workflows/docker-image.yml)
+[![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)
 
 This project provides a custom Docker image based on the official Microsoft ASP.NET image, with Playwright installed for web automation and testing. This image is ideal for developers who need to integrate Playwright tests into their ASP.NET applications.
 
@@ -12,7 +12,7 @@ This project provides a custom Docker image based on the official Microsoft ASP.
 
 ## Docker Hub Repository
 
-You can find the Docker images for this project on Docker Hub: [nrivett/aspnet-playwright](https://hub.docker.com/r/nrivett/aspnet-playwright).
+You can find the Docker images for this project on Docker Hub: [nrivett/temp-aspnet-playwright](https://hub.docker.com/r/nrivett/temp-aspnet-playwright).
 
 ## GitHub Repository
 
@@ -22,24 +22,24 @@ The source code for this project is available on GitHub: [yourusername/yourrepos
 
 The Docker images are tagged based on the base ASP.NET version and the build date to allow for easy versioning and rolling updates.
 
-- `nrivett/aspnet-playwright:6.0` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`.
-- `nrivett/aspnet-playwright:8.0` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`.
-- `nrivett/aspnet-playwright:6.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`, with the build date appended.
-- `nrivett/aspnet-playwright:8.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`, with the build date appended.
+- `nrivett/temp-aspnet-playwright:6.0` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`.
+- `nrivett/temp-aspnet-playwright:8.0` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`.
+- `nrivett/temp-aspnet-playwright:6.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:6.0`, with the build date appended.
+- `nrivett/temp-aspnet-playwright:8.0-YYYYMMDD` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`, with the build date appended.
 
 ## Usage
 
 To use this Docker image, you can pull it from Docker Hub and run it as follows:
 
 ```sh
-docker pull nrivett/aspnet-playwright:8.0
-docker run -it --rm nrivett/aspnet-playwright:8.0
+docker pull nrivett/temp-aspnet-playwright:8.0
+docker run -it --rm nrivett/temp-aspnet-playwright:8.0
 ```
 
 Or with the date tag:
 ```sh
-docker pull nrivett/aspnet-playwright:8.0-YYYYMMDD
-docker run -it --rm nrivett/aspnet-playwright:8.0-YYYYMMDD
+docker pull nrivett/temp-aspnet-playwright:8.0-YYYYMMDD
+docker run -it --rm nrivett/temp-aspnet-playwright:8.0-YYYYMMDD
 ```
 
 ## Building and Pushing the Image
