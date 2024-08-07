@@ -1,6 +1,9 @@
 # ASP.NET with Playwright Docker Image
 
 [![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
+[![Docker Image Size](https://img.shields.io/docker/image-size/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
+[![Docker Stars](https://img.shields.io/docker/stars/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
 
 This project provides a custom Docker image based on the official Microsoft ASP.NET image, with Playwright installed for web automation and testing. This image is ideal for developers who need to integrate Playwright tests into their ASP.NET applications.
 
@@ -9,6 +12,12 @@ This project provides a custom Docker image based on the official Microsoft ASP.
 - Based on the official Microsoft ASP.NET image.
 - Installs Node.js and Playwright with all necessary dependencies for Chromium.
 - Cleans up unnecessary files to keep the image size minimal.
+
+## Supported Architectures
+
+The Docker images for this project support the following architectures:
+- `linux/amd64`
+- `linux/arm64`
 
 ## Docker Hub Repository
 
