@@ -1,11 +1,8 @@
 # ASP.NET with Playwright Docker Image
 
-[![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml)
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
-
-[![Docker Image Size](https://img.shields.io/docker/image-size/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
-
+[![Build and Push Docker Image](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DevNickR/temp-aspnet-playwright/actions/workflows/docker-image.yml) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright) 
+[![Docker Image Size](https://img.shields.io/docker/image-size/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright) 
 [![Docker Stars](https://img.shields.io/docker/stars/nrivett/temp-aspnet-playwright)](https://hub.docker.com/r/nrivett/temp-aspnet-playwright)
 
 
