@@ -34,13 +34,11 @@ The Docker images are tagged based on the base ASP.NET version, specific variant
 
 - `nrivett/temp-aspnet-playwright:8.0-bookworm-slim` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim`.
 - `nrivett/temp-aspnet-playwright:8.0-jammy` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-jammy`.
-- `nrivett/temp-aspnet-playwright:8.0-alpine` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0-alpine`.
 - `nrivett/temp-aspnet-playwright:8.0` - Based on `mcr.microsoft.com/dotnet/aspnet:8.0`.
 
 Each tag also includes a date-based variant for rolling updates:
 - `nrivett/temp-aspnet-playwright:8.0-bookworm-slim-YYYYMMDD`
 - `nrivett/temp-aspnet-playwright:8.0-jammy-YYYYMMDD`
-- `nrivett/temp-aspnet-playwright:8.0-alpine-YYYYMMDD`
 - `nrivett/temp-aspnet-playwright:8.0-YYYYMMDD`
 
 ## Usage
